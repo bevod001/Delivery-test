@@ -1,0 +1,14 @@
+.consultation {
+  min-height: 371px;
+  padding-bottom: 58px;
+}
+.consultation .agent__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 102px;
+  width: 102px;
+  border: 1px #fff solid;
+  border-radius: 100%;
+  margin: 0 auto;
+}

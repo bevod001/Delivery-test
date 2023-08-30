@@ -1,0 +1,26 @@
+.btn {
+    display: block;
+    width: 173px;
+    height: 48px;
+    background-color: $main-color;
+    border-radius: 35px;
+    font-size: 12px;
+    line-height: 22px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 11px 19px;
+    border: none;
+
+    &_calculation {
+        width: 230px;
+        height: 57px;
+        margin: 0 auto;
+        margin-top: 39px;
+        font-size: 15px;
+        line-height: 17px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #ffffff;
+    }
+}

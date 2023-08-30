@@ -1,0 +1,21 @@
+.form {
+    position: relative;
+    &__wrapper {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px #898989 solid;
+        height: 166px;
+        z-index: 1;
+        margin-top: 76px;
+    }
+    &__item {
+        height: 40px;
+        width: 260px;
+        border-radius: 22px;
+        padding-left: 25px;
+        margin-right: 5px;
+        font-size: 16px;
+    }
+}

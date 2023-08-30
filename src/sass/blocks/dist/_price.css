@@ -1,0 +1,10 @@
+.price {
+  padding: 53px 0 55px 0;
+}
+.price__title {
+  font-size: 26px;
+  line-height: 23px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #2e2e2e;
+}

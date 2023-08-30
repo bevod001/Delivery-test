@@ -1,0 +1,29 @@
+.plan {
+  min-height: 454px;
+  background-color: #f3f3f3;
+  padding: 51px 0 56px 0;
+}
+.plan__title {
+  font-size: 26px;
+  line-height: 23px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #2e2e2e;
+  text-align: center;
+}
+.plan__wrapper-max {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 70px);
+  justify-items: center;
+  text-align: center;
+  margin-top: 33px;
+}
+.plan__wrapper-min {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 70px);
+  justify-items: center;
+  text-align: center;
+  margin-top: 44px;
+}
