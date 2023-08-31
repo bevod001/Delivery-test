@@ -449,7 +449,6 @@
     <section class="consultation">
       <div class="container">
         <h3 class="consultation__title">Заказать бесплатную консультацию</h3>
-
         <form id="consultation__form" class="form" action="#">
           <div class="form__wrapper">
             <div class="around">
@@ -579,7 +578,7 @@
         <div class="slider__inner">
           <div class="slider__item">
             <img src="img/slider/1.jpg" alt="watch" />
-            <div class="slider__name">Вин Ди́зель </div>
+            <div class="slider__name">Вин Ди́зель</div>
             <div class="slider__descr">
               Хочу рассказать о компании Global Opt. Самое главное что меня
               радует, это быстрый поиск и анализ определенного товара.
@@ -590,7 +589,7 @@
           </div>
           <div class="slider__item">
             <img src="img/slider/2.jpg" alt="watch" />
-            <div class="slider__name">Михаил Боярский </div>
+            <div class="slider__name">Михаил Боярский</div>
             <div class="slider__descr">
               Хочу рассказать о компании Global Opt. Самое главное что меня
               радует, это быстрый поиск и анализ определенного товара.
@@ -601,7 +600,7 @@
           </div>
           <div class="slider__item">
             <img src="img/slider/3.jpg" alt="watch" />
-            <div class="slider__name">Джейсон Стейтем </div>
+            <div class="slider__name">Джейсон Стейтем</div>
             <div class="slider__descr">
               Хочу рассказать о компании Global Opt. Самое главное что меня
               радует, это быстрый поиск и анализ определенного товара.
@@ -612,7 +611,7 @@
           </div>
           <div class="slider__item">
             <img src="img/slider/4.jpeg" alt="watch" />
-            <div class="slider__name">Чак Норрис </div>
+            <div class="slider__name">Чак Норрис</div>
             <div class="slider__descr">
               Хочу рассказать о компании Global Opt. Самое главное что меня
               радует, это быстрый поиск и анализ определенного товара.
@@ -622,18 +621,55 @@
             </div>
           </div>
         </div>
-        <!-- <button type="button" class="prev">
-          <img src="icons/slider/prev.png" alt="prev" />
-        </button>
-        <button type="button" class="next">
-          <img src="icons/slider/next.png" alt="next" />
-        </button> -->
       </div>
     </section>
+    <section class="question">
+      <div class="container">
+        <form id="question__form" class="question__form" action="#">
+          <div class="question__wrapper">
+            <div class="question__top">
+              <div class="question__title">Остались вопросы?</div>
+              <div class="question__subtitle">Напишите нам!</div>
+            </div>
+            <div class="question__middle">
+              <input
+                required
+                minlength="3"
+                id="name"
+                placeholder="Ваше имя..."
+                type="text"
+                class="question__item"
+              />
+              <input
+                required
+                id="phone"
+                placeholder="Ваш номер телефона..."
+                type="phone"
+                class="question__item"
+              />
+              <input
+                required
+                id="email"
+                placeholder="Ваш e-mail..."
+                type="email"
+                class="question__item"
+              />
+                           
+            </div>
+            <div class="question__bottom">
+              <textarea name="text" id="text" placeholder="Сообщение..."></textarea>
+            </div>
+            <div class="question__footer">
+              <button class="btn question__btn">Отправить заявку</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <div class="section__location">
 
+    </div>
     <script src="js/jquery-3.7.0.min.js"></script>
-    <!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script> -->
-    <!-- <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
     <script src="js/slick.min.js"></script>
     <script src="js/script.js"></script>
   </body>
