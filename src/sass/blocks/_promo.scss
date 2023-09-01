@@ -124,11 +124,10 @@
     }
 
     &__reason {
-        // display: flex;
-        // flex-direction: column;
+        width: 284px;
         text-align: center;
         justify-content: space-evenly;
-        // align-items: center;
+
         img {
             width: 63px;
             height: 63px;
