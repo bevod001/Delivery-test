@@ -299,13 +299,17 @@ template {
 }
 
 * {
+  border: red 1px solid;
+}
+
+* {
   font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
 }
 
 .container {
-  width: 1140px;
+  max-width: 1140px;
   margin: 0 auto;
 }
 
@@ -316,6 +320,7 @@ template {
 }
 .promo__wrapper {
   display: flex;
+  position: relative;
   justify-content: space-between;
   align-items: center;
 }
@@ -361,7 +366,7 @@ template {
   text-align: center;
   margin-top: 9px;
 }
-.promo h1 {
+.promo__main {
   color: #ec644b;
   font-family: "Roboto Condensed";
   font-size: 72px;
@@ -392,6 +397,7 @@ template {
   height: 10px;
   border-radius: 100%;
   background-color: #fff;
+  border: none;
 }
 .promo__item-divider {
   display: block;
@@ -437,6 +443,9 @@ template {
   padding: 11px 19px;
   border: none;
 }
+.btn:hover {
+  background-color: #25333c;
+}
 .btn_calculation {
   width: 230px;
   height: 57px;
@@ -476,12 +485,16 @@ template {
   line-height: 22px;
   font-weight: 700;
   color: #ec644b;
+  text-align: center;
 }
 .advantages__items-descr {
   font-size: 14px;
   font-weight: 400;
   color: #3a3a3a;
   margin-top: 10px;
+  text-align: justify;
+  padding-left: 8px;
+  padding-right: 8px;
 }
 .advantages__items-icon {
   margin-right: 20px;
@@ -520,7 +533,7 @@ template {
 .job__items {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 370px;
+  grid-template-rows: repeat(2, minmax(10px, auto));
   column-gap: 30px;
   grid-auto-rows: 370px;
   margin-top: 37px;
@@ -976,7 +989,6 @@ template {
 .question__btn {
   display: block;
   font-size: 12px;
-  line-height: 25px;
   font-weight: 400;
   text-transform: uppercase;
   color: #ffffff;
@@ -1062,4 +1074,128 @@ template {
   line-height: 17px;
   font-weight: 300;
   color: #ffffff;
+}
+
+.promo__menu-nav_active {
+  display: grid;
+  position: fixed;
+  top: 0;
+  /* left: -100%; */
+  width: 50%;
+  height: 100vh;
+  padding: 20px 15px;
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: 0.6s all;
+  align-content: center;
+  justify-content: space-around;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+  .promo__reasons {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .promo__logo {
+    display: none;
+  }
+  .promo__menu-nav {
+    display: none;
+  }
+  .promo__wrapper {
+    justify-content: space-evenly;
+  }
+}
+@media (max-width: 991px) {
+  .container {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+
+  .promo__title {
+    font-size: 30px;
+  }
+  .promo__subtitle {
+    font-size: 18px;
+  }
+  .promo__main {
+    font-size: 40px;
+  }
+  .promo__item-dot {
+    width: 14px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    max-width: 540px;
+    margin: 0 auto;
+  }
+
+  .promo__item-dot {
+    width: 19px;
+  }
+  .promo__subtitle {
+    font-size: 15px;
+    margin-top: 20px;
+  }
+
+  .advantages__items {
+    column-gap: 35px;
+  }
+
+  .job__items {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, minmax(10px, auto));
+    row-gap: 30px;
+  }
+}
+@media (max-width: 575px) {
+  .container {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  .advantages__title {
+    font-size: 20px;
+  }
+  .advantages__items {
+    grid-template-columns: 1fr;
+  }
+  .advantages__items-icon {
+    width: 57px;
+  }
+
+  .job__title {
+    font-size: 20px;
+  }
+  .job__subtitle {
+    font-size: 16px;
+  }
+
+  .agent__title {
+    font-size: 20px;
+  }
+  .agent__descr {
+    font-size: 16px;
+  }
+}
+@media (max-width: 472px) {
+  .promo__wrapper {
+    flex-direction: column;
+  }
+  .promo__btn {
+    margin-top: 20px;
+  }
+  .promo__item-dot {
+    width: 22px;
+  }
+}
+@media (max-width: 446px) {
+  .promo__item-dot {
+    display: none;
+  }
 }

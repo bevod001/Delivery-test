@@ -32,7 +32,7 @@
     &__items {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 370px;
+        grid-template-rows: repeat(2, minmax(10px, auto));
         column-gap: 30px;
         grid-auto-rows: 370px;
         margin-top: 37px;
@@ -55,6 +55,7 @@
             color: #3a3a3a;
             margin-top: 15px;
         }
+
         img {
             width: 100%;
         }

@@ -28,6 +28,7 @@
             line-height: 22px;
             font-weight: 700;
             color: $main-color;
+            text-align: center;
         }
 
         &-descr {
@@ -35,6 +36,9 @@
             font-weight: 400;
             color: #3a3a3a;
             margin-top: 10px;
+            text-align: justify;
+            padding-left: 8px;
+            padding-right: 8px;
 
         }
         &-icon {

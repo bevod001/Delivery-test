@@ -1,0 +1,164 @@
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+        margin: 0 auto;
+
+    }
+
+    .promo {
+        &__reasons {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        &__logo {
+            display: none;
+        }
+
+        &__menu {
+            &-nav {
+                display: none;
+            }
+        }
+
+        &__wrapper {
+            justify-content: space-evenly;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .container {
+        max-width: 720px;
+        margin: 0 auto;
+    }
+
+    .promo {
+        &__title {
+            font-size: 30px;
+        }
+
+        &__subtitle {
+            font-size: 18px;
+        }
+
+        &__main {
+            font-size: 40px;
+        }
+
+        &__item {
+            &-dot {
+                width: 14px;
+            }
+        }
+    }
+
+    .job {}
+}
+
+@media (max-width: 767px) {
+    .container {
+        max-width: 540px;
+        margin: 0 auto;
+    }
+
+    .promo {
+        &__item {
+            &-dot {
+                width: 19px;
+            }
+        }
+
+        &__subtitle {
+            font-size: 15px;
+            margin-top: 20px;
+        }
+    }
+
+    .advantages {
+        &__items {
+            column-gap: 35px;
+        }
+    }
+
+    .job {
+        &__items {
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(3, minmax(10px, auto));
+            row-gap: 30px;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .container {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
+    .advantages {
+        &__title {
+            font-size: 20px;
+        }
+
+        &__items {
+            grid-template-columns: 1fr;
+        }
+
+        &__items {
+            &-icon {
+                width: 57px;
+            }
+        }
+    }
+    .job {
+        &__title {
+            font-size: 20px;
+        }
+
+        &__subtitle {
+            font-size: 16px;
+        }
+    }
+    .agent {
+        &__title {
+            font-size: 20px;
+        }
+        &__descr {
+            font-size: 16px;
+        }
+    }
+
+
+}
+
+@media (max-width: 472px) {
+    .promo {
+        &__wrapper {
+            flex-direction: column;
+
+        }
+
+        &__btn {
+            margin-top: 20px;
+        }
+
+        &__item {
+            &-dot {
+                width: 22px;
+            }
+        }
+    }
+
+    .advantages {}
+}
+
+@media (max-width: 446px) {
+    .promo {
+        &__item {
+            &-dot {
+                display: none;
+            }
+        }
+    }
+}

@@ -5,6 +5,7 @@
 
     &__wrapper {
         display: flex;
+        position: relative;
         justify-content: space-between;
         align-items: center;
 
@@ -71,7 +72,7 @@
         margin-top: 9px;
     }
 
-    h1 {
+    &__main {
         color: $main-color;
         font-family: 'Roboto Condensed';
         font-size: 72px;
@@ -106,6 +107,7 @@
             height: 10px;
             border-radius: 100%;
             background-color: #fff;
+            border: none;
         }
 
         &-divider {

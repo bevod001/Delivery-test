@@ -1,0 +1,109 @@
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+  .promo__reasons {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .promo__logo {
+    display: none;
+  }
+  .promo__menu-nav {
+    display: none;
+  }
+  .promo__wrapper {
+    justify-content: space-evenly;
+  }
+}
+@media (max-width: 991px) {
+  .container {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+
+  .promo__title {
+    font-size: 30px;
+  }
+  .promo__subtitle {
+    font-size: 18px;
+  }
+  .promo__main {
+    font-size: 40px;
+  }
+  .promo__item-dot {
+    width: 14px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    max-width: 540px;
+    margin: 0 auto;
+  }
+
+  .promo__item-dot {
+    width: 19px;
+  }
+  .promo__subtitle {
+    font-size: 15px;
+    margin-top: 20px;
+  }
+
+  .advantages__items {
+    column-gap: 35px;
+  }
+
+  .job__items {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, minmax(10px, auto));
+    row-gap: 30px;
+  }
+}
+@media (max-width: 575px) {
+  .container {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  .advantages__title {
+    font-size: 20px;
+  }
+  .advantages__items {
+    grid-template-columns: 1fr;
+  }
+  .advantages__items-icon {
+    width: 57px;
+  }
+
+  .job__title {
+    font-size: 20px;
+  }
+  .job__subtitle {
+    font-size: 16px;
+  }
+
+  .agent__title {
+    font-size: 20px;
+  }
+  .agent__descr {
+    font-size: 16px;
+  }
+}
+@media (max-width: 472px) {
+  .promo__wrapper {
+    flex-direction: column;
+  }
+  .promo__btn {
+    margin-top: 20px;
+  }
+  .promo__item-dot {
+    width: 22px;
+  }
+}
+@media (max-width: 446px) {
+  .promo__item-dot {
+    display: none;
+  }
+}

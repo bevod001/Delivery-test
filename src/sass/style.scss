@@ -5,9 +5,11 @@
 @import 'base/variables';
 @import 'base/mixins';
 
-// * {
-//     border: red 1px solid;
-// }
+* {
+    border: red 1px solid;
+}
+
+
 
 * {
     font-family: 'Roboto', sans-serif;
@@ -16,7 +18,7 @@
 }
 
 .container {
-    width: 1140px;
+    max-width: 1140px;
     margin: 0 auto;
 }
 
@@ -34,3 +36,5 @@
 @import 'blocks/question';
 @import 'blocks/location';
 @import 'blocks/footer';
+@import 'blocks/burger';
+@import 'blocks/media';
