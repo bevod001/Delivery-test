@@ -1,0 +1,12 @@
+.job {
+  padding: 51px 0 57px 0;
+  min-height: 619px;
+}
+.job__title {
+  font-size: 26px;
+  line-height: 23px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #2e2e2e;
+  text-align: center;
+}

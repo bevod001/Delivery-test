@@ -1,0 +1,62 @@
+.consultation {
+    min-height: 371px;
+    padding-bottom: 58px;
+    position: relative;
+    &__title {
+        font-size: 26px;
+        line-height: 23px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #2e2e2e;
+        text-align: center;
+    }
+    .around {
+        display: block;
+        position: absolute;
+        width: 150px;
+        height: 102px;
+        z-index: 2;
+        background-color: #ffffff;
+        top: -62px;
+        right: 50%;
+        transform: translateX(50%);
+    }
+
+    .agent {
+        &__icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 102px;
+            width: 102px;
+            border: 1px $main-color solid;
+            border-radius: 100%;
+            margin: 0 auto;
+            background-color: #ffffff;
+        }
+    }
+
+    &__around {
+        display: block;
+        position: absolute;
+        width: 230px;
+        height: 50px;
+        right: 50%;
+        bottom: -27px;
+        transform: translateX(50%);
+        background-color: #ffffff;
+        z-index: 2;
+    }
+
+    &_btn {
+        width: 180px;
+        height: 45px;
+        font-size: 12px;
+        line-height: 22px;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: #ffffff;
+        margin: 0 auto;
+
+    }
+}

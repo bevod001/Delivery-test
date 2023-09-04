@@ -1,0 +1,453 @@
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+        margin: 0 auto;
+
+    }
+
+    .promo {
+        &__reasons {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        &__logo {
+            display: none;
+        }
+
+        &__menu {
+            &-nav {
+                display: none;
+            }
+        }
+
+        &__wrapper {
+            justify-content: space-evenly;
+        }
+
+        &__reason {
+            margin-top: 27px;
+            &-descr {
+                margin-top: 9px;
+            }
+        }
+    }
+
+    .price {
+        &__items {
+            grid-template-columns: repeat(2, 1fr);
+            row-gap: 26px;
+        }
+    }
+
+    .slider {
+        &__inner {
+            .slick-prev {
+                left: 38%;
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .container {
+        max-width: 720px;
+        margin: 0 auto;
+    }
+
+    .promo {
+        &__title {
+            font-size: 30px;
+        }
+
+        &__subtitle {
+            font-size: 18px;
+        }
+
+        &__main {
+            font-size: 40px;
+        }
+
+        &__item {
+            &-dot {
+                width: 14px;
+            }
+        }
+
+    }
+
+    .plan {
+        &__wrapper {
+            &-max {
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(2, 160px);
+                justify-items: stretch;
+            }
+
+            &-min {
+                margin-top: 25px;
+                grid-template-rows: repeat(2, 90px);
+            }
+        }
+    }
+
+    .slider {
+        &__inner {
+            .slick-prev {
+                left: 36%;
+            }
+
+            .slick-next {
+                left: 62%;
+            }
+        }
+    }
+
+    .question {
+        &__wrapper {
+            width: 720px;
+        }
+    }
+
+    .footer {
+        &__logo {
+            display: none;
+        }
+
+        &__items {
+            &-number {
+                a {
+                    font-size: 15px;
+                }
+            }
+        }
+
+        &__title {
+            display: block;
+            width: 289px
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        max-width: 540px;
+        margin: 0 auto;
+    }
+
+    .promo {
+        &__item {
+            &-dot {
+                width: 19px;
+            }
+        }
+
+        &__subtitle {
+            font-size: 15px;
+            margin-top: 20px;
+        }
+    }
+
+    .advantages {
+        &__items {
+            column-gap: 35px;
+        }
+    }
+
+    .job {
+        &__items {
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(3, minmax(10px, auto));
+            row-gap: 30px;
+        }
+    }
+
+    .price {
+        &__item {
+            &-title {
+                width: 251px
+            }
+        }
+    }
+
+    .consultation {
+        .around {
+            display: none;
+        }
+
+        &__around {
+            bottom: -77px;
+        }
+
+        &__title {
+            font-size: 26px;
+        }
+    }
+
+    .form {
+        &__wrapper {
+            flex-direction: column;
+            justify-content: space-around;
+            margin-top: 34px;
+            border: none;
+        }
+    }
+
+    .plan {
+        &__wrapper {
+            &-min {
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(2, 154px);
+                margin-top: 26px;
+            }
+        }
+    }
+
+    .slider {
+        &__inner {
+            .slick-prev {
+                left: 31%;
+            }
+
+            .slick-next {
+                left: 66%;
+            }
+        }
+    }
+
+    .question {
+        min-height: 513px;
+
+        &__wrapper {
+            width: 540px;
+        }
+
+        &__middle {
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            height: 185px;
+        }
+
+        &__item {
+            width: 100%;
+        }
+
+        &__bottom {
+            padding-top: 15px;
+        }
+    }
+
+    .footer {
+        &__btn {
+            display: none;
+        }
+    }
+
+}
+
+@media (max-width: 575px) {
+    .container {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
+    .advantages {
+        &__title {
+            font-size: 20px;
+        }
+
+        &__items {
+            grid-template-columns: 1fr;
+        }
+
+        &__items {
+            &-icon {
+                width: 57px;
+            }
+        }
+    }
+
+    .job {
+        &__title {
+            font-size: 20px;
+        }
+
+        &__subtitle {
+            font-size: 16px;
+        }
+    }
+
+    .agent {
+        &__title {
+            font-size: 20px;
+        }
+
+        &__descr {
+            font-size: 16px;
+        }
+    }
+
+    .price {
+        &__title {
+            font-size: 20px;
+        }
+
+        &__descr {
+            font-size: 16px;
+        }
+
+        &__items {
+            grid-template-columns: 1fr;
+            row-gap: 26px;
+        }
+
+        &__item {
+            &-title {
+                width: 100%;
+            }
+        }
+    }
+
+    .manager {
+        &__title {
+            font-size: 20px;
+        }
+
+        &__descr {
+            font-size: 16px;
+        }
+
+    }
+
+    .form {
+        &__wrapper {
+            align-content: space-between;
+            margin-top: 22px;
+        }
+    }
+
+    .consultation {
+        &__title {
+            font-size: 20px;
+        }
+
+    }
+
+    .plan {
+        &__title {
+            font-size: 20px;
+        }
+
+        &__wrapper {
+            &-min {
+                grid-template-rows: repeat(2, 180px);
+            }
+        }
+    }
+
+    .slider {
+        &__title {
+            font-size: 20px;
+        }
+
+        &__subtitle {
+            font-size: 18px;
+        }
+
+        .slick-prev,
+        .slick-next {
+            display: none !important;
+        }
+    }
+
+    .question {
+        &__wrapper {
+            width: 449px;
+        }
+    }
+
+}
+
+@media (max-width: 472px) {
+    .promo {
+        &__wrapper {
+            flex-direction: column;
+
+        }
+
+        &__btn {
+            margin-top: 20px;
+        }
+
+        &__item {
+            &-dot {
+                width: 22px;
+            }
+        }
+    }
+
+    .question {
+        &__wrapper {
+            width: 412px;
+        }
+    }
+}
+
+@media (max-width: 446px) {
+    .promo {
+        &__item {
+            &-dot {
+                display: none;
+            }
+        }
+    }
+
+    .plan {
+        &__wrapper {
+            &-max {
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(4, 160px);
+                align-items: center;
+            }
+
+            &-min {
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(3, 160px);
+                margin-top: 0;
+            }
+        }
+    }
+
+    .slider {
+        &__descr {
+            width: 206px;
+        }
+    }
+
+    .question {
+        &__wrapper {
+            width: 295px;
+        }
+    }
+
+    .footer {
+        &__top {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        &__items {
+
+            &-contacts {
+                margin-top: 15px;
+                text-align: center;
+            }
+        }
+
+        &__button {
+            flex-direction: column;
+        }
+
+    }
+}

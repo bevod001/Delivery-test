@@ -1,0 +1,56 @@
+.plan {
+    min-height: 454px;
+    background-color: #f3f3f3;
+    padding: 51px 0 56px 0;
+
+    &__title {
+        font-size: 26px;
+        line-height: 23px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #2e2e2e;
+        text-align: center;
+    }
+
+    &__wrapper {
+        &-max {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, 70px);
+            grid-auto-rows: 70px;
+            justify-items: center;
+            text-align: center;
+            margin-top: 33px;
+            align-items: stretch;
+        }
+
+        &-min {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 70px);
+            grid-auto-rows: 70px;
+            justify-items: center;
+            text-align: center;
+            margin-top: 44px;
+            align-items: stretch;
+        }
+
+        &-title {
+            font-size: 16px;
+            line-height: 20px;
+            font-weight: 700;
+            color: $main-color;
+            margin-top: 12px;
+        }
+
+        &-descr {
+            font-size: 14px;
+            font-weight: 300;
+            color: #3a3a3a;
+        }
+        &-icon {
+            height: 55px;
+        }
+    }
+
+}

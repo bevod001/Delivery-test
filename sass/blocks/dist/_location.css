@@ -1,0 +1,7 @@
+.location {
+  height: 500px;
+}
+.location iframe {
+  width: 100%;
+  height: 500px;
+}

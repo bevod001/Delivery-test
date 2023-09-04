@@ -1,0 +1,19 @@
+.promo {
+
+    &__menu {
+        &-nav_active {
+            display: grid;
+            position: fixed;
+            top: 0;
+            /* left: -100%; */
+            width: 50%;
+            height: 100vh;
+            padding: 20px 15px;
+            background-color: rgba(0, 0, 0, .8);
+            transition: .6s all;
+            align-content: center;
+            justify-content: space-around;
+        }
+
+    }
+}
