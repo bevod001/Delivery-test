@@ -24,10 +24,26 @@ $(document).ready(function () {
       },
       {
         breakpoint: 320,
-        settings: {
-
-        },
+        settings: {},
       },
     ],
+  });
+});
+
+window.addEventListener("DOMContentLoaded", () => {
+  const menu = document.querySelector(".promo__menu-nav"),
+    menuItem = document.querySelectorAll(".promo__menu-item"),
+    hamburger = document.querySelector(".hamburger");
+
+  hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("hamburger_active");
+    menu.classList.toggle("promo__menu-nav-active");
+  });
+
+  menuItem.forEach((item) => {
+    item.addEventListener("click", () => {
+      hamburger.classList.toggle("hamburger_active");
+      menu.classList.toggle("promo__menu-nav-active");
+    });
   });
 });

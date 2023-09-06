@@ -26,3 +26,18 @@ $(document).ready(function () {
     }]
   });
 });
+window.addEventListener("DOMContentLoaded", function () {
+  var menu = document.querySelector(".promo__menu-nav"),
+      menuItem = document.querySelectorAll(".promo__menu-item"),
+      hamburger = document.querySelector(".hamburger");
+  hamburger.addEventListener("click", function () {
+    hamburger.classList.toggle("hamburger_active");
+    menu.classList.toggle("promo__menu-nav-active");
+  });
+  menuItem.forEach(function (item) {
+    item.addEventListener("click", function () {
+      hamburger.classList.toggle("hamburger_active");
+      menu.classList.toggle("promo__menu-nav-active");
+    });
+  });
+});
