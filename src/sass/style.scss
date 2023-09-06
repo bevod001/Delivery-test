@@ -5,9 +5,9 @@
 @import 'base/variables';
 @import 'base/mixins';
 
-* {
-    border: red 1px solid;
-}
+// * {
+//     border: red 1px solid;
+// }
 
 
 
@@ -36,5 +36,5 @@
 @import 'blocks/question';
 @import 'blocks/location';
 @import 'blocks/footer';
-@import 'blocks/burger';
+@import 'blocks/hamburger';
 @import 'blocks/media';

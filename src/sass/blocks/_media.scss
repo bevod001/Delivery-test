@@ -17,12 +17,110 @@
 
         &__menu {
             &-nav {
-                display: none;
+                flex-direction: column;
+                justify-content: center;
+                position: fixed;
+                top: 0;
+                left: -100%;
+                width: 30%;
+                height: 100vh;
+                padding: 20px 15px;
+                background-color: rgba($color: $main_color, $alpha: 0.8);
+                transition: 1s all;
+
+                &-active {
+                    left: 0;
+                }
+            }
+
+            &-item {
+                color: black;
+                border: 0;
+                margin: 10px 20px;
+                text-decoration: none;
+            }
+
+            &-link {
+                font-size: 30px;
+
             }
         }
 
+
         &__wrapper {
             justify-content: space-evenly;
+        }
+
+        &__reason {
+            margin-top: 27px;
+
+            &-descr {
+                margin-top: 9px;
+            }
+        }
+
+        .hamburger {
+            display: block;
+            position: fixed;
+            right: 16px;
+            top: 22px;
+            width: 35px;
+            height: 30px;
+            padding-top: 7px;
+            z-index: 20;
+
+            span {
+                display: block;
+                height: 2px;
+                width: 100%;
+                background-color: red;
+                margin-bottom: 5px;
+                transition: 1s all;
+            }
+
+            &_active {
+                z-index: 22;
+                :nth-child(1) {
+                    position: absolute;
+                    width: 20px;
+                    right: 15px px;
+                    top: 10px;
+                    transform: rotate(327deg);
+                }
+
+                :nth-child(2) {
+                    position: absolute;
+                    width: 29px;
+                    right: 2px;
+                    top: 15px;
+
+                }
+
+                :nth-child(3) {
+                    position: absolute;
+                    width: 20px;
+                    right: 14px;
+                    top: 20px;
+                    transform: rotate(208deg);
+                    ;
+                }
+            }
+
+        }
+    }
+
+    .price {
+        &__items {
+            grid-template-columns: repeat(2, 1fr);
+            row-gap: 26px;
+        }
+    }
+
+    .slider {
+        &__inner {
+            .slick-prev {
+                left: 38%;
+            }
         }
     }
 }
@@ -51,9 +149,70 @@
                 width: 14px;
             }
         }
+
+        &__menu {
+            &-nav {
+                &-active {
+                    z-index: 20;
+                    width: 40%;
+                }
+            }
+        }
+
     }
 
-    .job {}
+    .plan {
+        &__wrapper {
+            &-max {
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(2, 160px);
+                justify-items: stretch;
+            }
+
+            &-min {
+                margin-top: 25px;
+                grid-template-rows: repeat(2, 90px);
+            }
+        }
+    }
+
+    .slider {
+        &__inner {
+            .slick-prev {
+                left: 36%;
+            }
+
+            .slick-next {
+                left: 62%;
+            }
+        }
+    }
+
+    .question {
+        &__wrapper {
+            width: 720px;
+        }
+    }
+
+    .footer {
+        &__logo {
+            display: none;
+        }
+
+        &__items {
+            &-number {
+                a {
+                    font-size: 15px;
+                }
+            }
+        }
+
+        &__title {
+            display: block;
+            width: 289px
+        }
+    }
+
 }
 
 @media (max-width: 767px) {
@@ -73,6 +232,14 @@
             font-size: 15px;
             margin-top: 20px;
         }
+
+        &__menu {
+            &-nav {
+                &-active {
+                    width: 52%;
+                }
+            }
+        }
     }
 
     .advantages {
@@ -88,12 +255,105 @@
             row-gap: 30px;
         }
     }
+
+    .price {
+        &__item {
+            &-title {
+                width: 251px
+            }
+        }
+    }
+
+    .consultation {
+        .around {
+            display: none;
+        }
+
+        &__around {
+            bottom: -77px;
+        }
+
+        &__title {
+            font-size: 26px;
+        }
+    }
+
+    .form {
+        &__wrapper {
+            flex-direction: column;
+            justify-content: space-around;
+            margin-top: 34px;
+            border: none;
+        }
+    }
+
+    .plan {
+        &__wrapper {
+            &-min {
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(2, 154px);
+                margin-top: 26px;
+            }
+        }
+    }
+
+    .slider {
+        &__inner {
+            .slick-prev {
+                left: 31%;
+            }
+
+            .slick-next {
+                left: 66%;
+            }
+        }
+    }
+
+    .question {
+        min-height: 513px;
+
+        &__wrapper {
+            width: 540px;
+        }
+
+        &__middle {
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            height: 185px;
+        }
+
+        &__item {
+            width: 100%;
+        }
+
+        &__bottom {
+            padding-top: 15px;
+        }
+    }
+
+    .footer {
+        &__btn {
+            display: none;
+        }
+    }
+
 }
 
 @media (max-width: 575px) {
     .container {
         max-width: 100%;
         padding: 0 10px;
+    }
+
+    .promo {
+        &__menu {
+            &-nav {
+                &-active {
+                    width: 63%;
+                }
+            }
+        }
     }
 
     .advantages {
@@ -111,6 +371,7 @@
             }
         }
     }
+
     .job {
         &__title {
             font-size: 20px;
@@ -120,15 +381,95 @@
             font-size: 16px;
         }
     }
+
     .agent {
         &__title {
             font-size: 20px;
         }
+
         &__descr {
             font-size: 16px;
         }
     }
 
+    .price {
+        &__title {
+            font-size: 20px;
+        }
+
+        &__descr {
+            font-size: 16px;
+        }
+
+        &__items {
+            grid-template-columns: 1fr;
+            row-gap: 26px;
+        }
+
+        &__item {
+            &-title {
+                width: 100%;
+            }
+        }
+    }
+
+    .manager {
+        &__title {
+            font-size: 20px;
+        }
+
+        &__descr {
+            font-size: 16px;
+        }
+
+    }
+
+    .form {
+        &__wrapper {
+            align-content: space-between;
+            margin-top: 22px;
+        }
+    }
+
+    .consultation {
+        &__title {
+            font-size: 20px;
+        }
+
+    }
+
+    .plan {
+        &__title {
+            font-size: 20px;
+        }
+
+        &__wrapper {
+            &-min {
+                grid-template-rows: repeat(2, 180px);
+            }
+        }
+    }
+
+    .slider {
+        &__title {
+            font-size: 20px;
+        }
+
+        &__subtitle {
+            font-size: 18px;
+        }
+
+        .slick-prev,
+        .slick-next {
+            display: none !important;
+        }
+    }
+
+    .question {
+        &__wrapper {
+            width: 449px;
+        }
+    }
 
 }
 
@@ -148,9 +489,22 @@
                 width: 22px;
             }
         }
+
+        &__menu {
+            &-nav {
+                &-active {
+                    width: 66%;
+                }
+            }
+        }
+
     }
 
-    .advantages {}
+    .question {
+        &__wrapper {
+            width: 412px;
+        }
+    }
 }
 
 @media (max-width: 446px) {
@@ -160,5 +514,60 @@
                 display: none;
             }
         }
+        &__menu {
+            &-nav {
+                &-active {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .plan {
+        &__wrapper {
+            &-max {
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(4, 160px);
+                align-items: center;
+            }
+
+            &-min {
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(3, 160px);
+                margin-top: 0;
+            }
+        }
+    }
+
+    .slider {
+        &__descr {
+            width: 206px;
+        }
+    }
+
+    .question {
+        &__wrapper {
+            width: 295px;
+        }
+    }
+
+    .footer {
+        &__top {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        &__items {
+
+            &-contacts {
+                margin-top: 15px;
+                text-align: center;
+            }
+        }
+
+        &__button {
+            flex-direction: column;
+        }
+
     }
 }
